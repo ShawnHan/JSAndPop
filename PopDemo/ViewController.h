@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *myWebView;
+- (IBAction)popAction:(id)sender;
+- (IBAction)podUPcome:(id)sender;
 
 @end
